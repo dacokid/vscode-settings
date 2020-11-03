@@ -1,7 +1,7 @@
 {
   "explorer.confirmDragAndDrop": false,
   "team.showWelcomeMessage": false,
-  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
   "workbench.startupEditor": "newUntitledFile",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "output.smartScroll.enabled": false,
@@ -9,7 +9,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[html]": {
-    // "editor.defaultFormatter": "vscode.html-language-features"
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.definitionLinkOpensInPeek": true,
@@ -18,7 +17,13 @@
   "font_options": ["no_italic"],
   "liveServer.settings.donotVerifyTags": true,
   "liveServer.settings.donotShowInfoMsg": true,
-
+  "liveSassCompile.settings.formats": [
+    //   // This is Default.
+    {
+      "format": "compressed",
+      "extensionName": ".min.css"
+    }
+  ],
   "emmet.syntaxProfiles": { "javascript": "jsx" },
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
@@ -31,7 +36,6 @@
     "**/templates/**/*": "django-txt",
     "**/requirements{/**,*}.{txt,in}": "pip-requirements"
   },
-
   "material-icon-theme.folders.associations": {
     "tarefas": "tasks",
     "templates": "mappings",
@@ -49,13 +53,19 @@
     "websockets": "pipe",
     "protos": "pipe",
     "grpc": "pipe",
-    "users": "vm"
+    "users": "vm",
+    "queries": "graphql",
+    "subscriptions": "graphql",
+    "mutations": "graphql"
   },
 
   "material-icon-theme.files.associations": {
     "*.sqlite3": "database",
     "ormconfig.json": "database",
-    "*.proto": "3d"
+    "*.proto": "3d",
+    "queries.js": "graphql",
+    "mutations.js": "graphql",
+    "subscriptions.js": "graphql"
   },
 
   "explorer.confirmDelete": false,
@@ -68,7 +78,7 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.fontSize": 15,
+  "editor.fontSize": 16,
   "window.zoomLevel": 0,
   "workbench.list.smoothScrolling": true,
   "workbench.iconTheme": "material-icon-theme",
@@ -183,11 +193,29 @@
           "variable.other.readwrite",
           "variable.parameter"
         ],
-        "settings": {
-          "fontStyle": ""
-        }
+        "settings": {}
       }
     ]
   },
-  "workbench.colorTheme": "Dracula",
+  "material-icon-theme.activeIconPack": "react",
+  "editor.minimap.enabled": false,
+  "editor.autoClosingBrackets": "always",
+  "workbench.colorCustomizations": {
+    "tab.activeBackground": "#5a005e",
+    "terminal.ansiBrightBlue": "#e940ff",
+    "terminal.ansiBrightCyan": "#6dddff",
+    "terminal.ansiBrightBlack": "#57fd60",
+    "terminal.ansiBrightYellow": "#ffec40"
+  },
+  "mytemplates.path": "C:\\Users\\danie\\Documents\\Templates",
+  "extensions.ignoreRecommendations": false,
+  "prettier.packageManager": "yarn",
+  "prettier.singleQuote": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorTheme": "Omni"
 }
